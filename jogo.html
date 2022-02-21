@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang = "pt-br">
+<head>
+	<meta charset = "UTF-8">
+	<title>Sorteio jogo Loteria</title>
+	<link rel="stylesheet" href="style.css">
+	<link rel="shortcut icon" href="trevo2.jpg">
+
+
+</head>
+	<body>
+	<div class="content">
+
+		<form>
+			<fieldset>
+				<legend>
+					Selecione a loteria que gostaria de sortear os números:
+				</legend>
+				<select name="SelectJogo" id="jogo" multiple size="3" onchange= "mudandoJogo()" >
+					<option value="Lotofacil">LOTOFACIL</option>
+					<option value="Quina">QUINA</option>
+					<option value="Mega">MEGA-SENA</option>
+				</select>
+				<div id="jogos" style="display: none;">
+					<legend >Selecione quantidade de jogos:</legend>
+					<input id="qtdjogos" type="number" min="1" onchange= "mudandoJogo2()">
+				</div>
+				<div id="bolao" style="display: none;">
+					<legend >Selecione quantidade de apostadores:</legend>
+					<input id="apostador" type="number" min="1" max="100" onchange= "enviar()">
+				</div>
+		</form>
+			</fieldset>
+			<button class="ok" id="ok" style="display: none;" >Sortear números</button>
+	</div>	
+</body>
+<footer id="footer" style="display: none;">	
+		<div id="caixa">
+			<h1 id="resultado"></h1>
+			<script src="index.js"></script> 
+			<ul id="lista">
+			</ul>
+			<h3 id="texto">
+			</div>
+</footer>
+</html>

@@ -1,0 +1,114 @@
+#imagem{
+	vertical-align: top;
+    height: 100%;
+}
+select{
+    color: #0000FF;
+    font-weight: bold;
+}
+fieldset{
+    background: #eeeeee;
+    color: #000000;
+    width: 60%;
+    text-align: center;
+    margin: 2em auto;
+    box-sizing:border-box;
+    border: 4px solid #00FF00;  
+    border-radius: 10px;
+    font-weight: bold;
+    box-shadow: 5px 5px 5px  #000000;
+}
+
+#qtdjogos,#apostador{
+    width: 15%;
+    text-align: center;
+    color: #FF0000;
+    font-weight: bold;
+}
+.ok{
+color:#fbff00;
+background: darkgreen;
+font-weight: bold;
+box-sizing:border-box;
+border: 3px solid #00FF00;  
+border-radius: 500px;
+margin: 0 auto;
+}
+.ok:hover{
+    transition: 0.5s all;
+    opacity: 2;
+    box-shadow: 5px 5px 5px  #000000;
+    cursor:pointer;
+    color:#aa0000;
+    background: #00ee00;
+    border: 3px solid #00ee00; 
+    border-radius:100%;
+
+}
+th,td{
+    text-align: center;
+    color: #ff009d;
+    font-weight: bold;
+    box-sizing:border-box;
+    border: 3px solid #000000;  
+    width: 5%;
+    margin: 0 auto;
+    background: #EEEEEE;
+    border-radius: 70px;
+    }
+td{
+    background: yellow;
+    color: #FF0000;
+    text-align: center;
+    margin: 0 auto;
+}
+footer{
+    text-align: center;
+    padding:40px;
+}
+
+#resultado{
+    padding:10px 0 ;
+    margin: 0 auto;
+    text-align: center;
+}
+.content{
+    box-sizing:border-box;
+    border: 3px solid #000000;  
+    margin: 10px auto;
+    text-align: center;
+    width: 70%;
+    height:300px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px  #000000;
+    background-image: url("trevo-940x438.png");
+    background-repeat: no-repeat; 
+
+}
+footer{
+    box-sizing:border-box;
+    border: 3px solid #000000;  
+    margin: 10px auto;
+    width: 70%;
+    text-align: center;
+    background: #EEEEEE;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px  #000000;
+}
+#escolha{
+    box-sizing:border-box;
+    border: 3px solid #000000;  
+    margin: 0 auto;
+    text-align: center;
+    width: 50%;
+
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px  #000000;
+    background-image: url("trevo-940x438.png");
+    background-repeat: no-repeat; 
+    text-align: center;
+}
+button{
+    color: #e100ff;
+    border-radius: 50px;
+}

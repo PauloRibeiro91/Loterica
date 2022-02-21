@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+
+<head>
+	<html lang = "pt-br">
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<select name="SelectJogo" id="jogo" multiple size="3" onchange= "selecionaJogo()" >
+		<option value="Lotofacil">LOTOFACIL</option>
+		<option value="Mega">MEGA-SENA</option>
+		<option value="Quina">QUINA</option>
+	</select>
+	<p id="primeiro"> </p>	
+	<p id="segundo"> </p>
+	<div id="escolha"> 
+		<table id="conferirLoto"style="display: none;">
+				<tr>
+				<td id="conferir2"><button id="um" onclick="insert('01');this.disabled = true;">1</button></td>
+				<td id="conferir2"><button id="dois" onclick="insert('02');this.disabled = true;">2</button></td>
+				<td id="conferir2"><button id="tres" onclick="insert('03');this.disabled = true;">3</button></td>
+				<td id="conferir2"><button id="quatro" onclick="insert('04');this.disabled = true;">4</button></td>
+				<td id="conferir2"><button id="cinco" onclick="insert('05');this.disabled = true;">5</button></td>
+			</tr>
+			<tr>
+				<td id="conferir2"><button id="seis" onclick="insert('06');this.disabled = true;">6</button></td>
+				<td id="conferir2"><button id="sete" onclick="insert('07');this.disabled = true;">7</button></td>
+				<td id="conferir2"><button id="oito" onclick="insert('08');this.disabled = true;">8</button></td>
+				<td id="conferir2"><button id="nove" onclick="insert('09');this.disabled = true;">9</button></td>
+				<td id="conferir2"><button id="dez" onclick="insert('10');this.disabled = true;">10</button></td>
+			</tr>
+			<tr>
+				<td id="conferir2"><button id="onze"onclick="insert('10');this.disabled = true;">11</button></td>
+				<td id="conferir2"><button id="doze" >12</button></td>
+				<td id="conferir2"><button id="treza">13</button></td>
+				<td id="conferir2"><button id="quatorsse">14</button></td>
+				<td id="conferir2"><button id="quinze">15</button></td>
+			</tr>
+			<tr>
+				<td id="conferir2"><button id="dezesseis">16</button></td>
+				<td id="conferir2"><button id="dezessete">17</button></td>
+				<td id="conferir2"><button id="dezoito">18</button></td>
+				<td id="conferir2"><button id="dezenove">19</button></td>
+				<td id="conferir2"><button id="vinte">20</button></td>
+			</tr>
+			<tr>
+				<td id="conferir2"><button id="vinteeum">21</button></td>
+				<td id="conferir2"><button id="vinteedois">22</button></td>
+				<td id="conferir2"><button id="vinteetres">23</button></td>
+				<td id="conferir2"><button id="vinteequatro">24</button></td>
+				<td id="conferir2"><button id="vinteecinco">25</button></td>
+			</tr>
+		</table>	
+		<table  id="conferirMega" style="display: none;">
+			<tr>
+				<td id="conferir2"><button id="vinteeseis">26</button></td>
+				<td id="conferir2"><button id="vinteesete">27</button></td>
+				<td id="conferir2"><button id="vinteeoito">28</button></td>
+				<td id="conferir2"><button id="vinteenove">29</button></td>
+				<td id="conferir2"><button id="trinta">30</button></td>
+			</tr>
+			<tr>
+				<td id="conferir2"><button id="trintaeum">31</button></td>
+				<td id="conferir2"><button id="trintaedois">32</button></td>
+				<td id="conferir2"><button id="trintaetres">33</button></td>
+				<td id="conferir2"><button id="trintaequatro">34</button></td>
+				<td id="conferir2"><button id="trintaecinto">35</button></td>
+			</tr>
+			<tr>
+				<td id="conferir2"><button id="vinteeseis">36</button></td>
+				<td id="conferir2"><button id="vinteesete">37</button></td>
+				<td id="conferir2"><button id="vinteeoito">38</button></td>
+				<td id="conferir2"><button id="vinteenove">39</button></td>
+				<td id="conferir2"><button id="trinta">40</button></td>
+			</tr>
+			<tr>
+				<td id="conferir2"><button id="trintaeum">41</button></td>
+				<td id="conferir2"><button id="trintaedois">42</button></td>
+				<td id="conferir2"><button id="trintaetres">43</button></td>
+				<td id="conferir2"><button id="trintaequatro">44</button></td>
+				<td id="conferir2"><button id="trintaecinto">45</button></td>
+			</tr>
+			<tr>
+				<td id="conferir2"><button id="vinteeseis">46</button></td>
+				<td id="conferir2"><button id="vinteesete">47</button></td>
+				<td id="conferir2"><button id="vinteeoito">48</button></td>
+				<td id="conferir2"><button id="vinteenove">49</button></td>
+				<td id="conferir2"><button id="trinta">50</button></td>
+			</tr>
+			<tr>
+				<td id="conferir2"><button id="trintaeum">51</button></td>
+				<td id="conferir2"><button id="trintaedois">52</button></td>
+				<td id="conferir2"><button id="trintaetres">53</button></td>
+				<td id="conferir2"><button id="trintaequatro">54</button></td>
+				<td id="conferir2"><button id="trintaecinto">55</button></td>
+			</tr>
+			<tr>
+				<td id="conferir2"><button id="vinteeseis">56</button></td>
+				<td id="conferir2"><button id="vinteesete">57</button></td>
+				<td id="conferir2"><button id="vinteeoito">58</button></td>
+				<td id="conferir2"><button id="vinteenove">59</button></td>
+				<td id="conferir2"><button id="trinta">60</button></td>
+			</tr>
+			</table>
+			<table id="conferirQuina" style="display: none;">
+			<tr>
+				<td id="conferir2"><button id="trintaeum">61</button></td>
+				<td id="conferir2"><button id="trintaedois">62</button></td>
+				<td id="conferir2"><button id="trintaetres">63</button></td>
+				<td id="conferir2"><button id="trintaequatro">64</button></td>
+				<td id="conferir2"><button id="trintaecinto">65</button></td>
+			</tr>
+			<tr>
+				<td id="conferir2"><button id="vinteeseis">66</button></td>
+				<td id="conferir2"><button id="vinteesete">67</button></td>
+				<td id="conferir2"><button id="vinteeoito">68</button></td>
+				<td id="conferir2"><button id="vinteenove">69</button></td>
+				<td id="conferir2"><button id="trinta">70</button></td>
+			</tr>
+			<tr>
+				<td id="conferir2"><button id="trintaeum">71</button></td>
+				<td id="conferir2"><button id="trintaedois">72</button></td>
+				<td id="conferir2"><button id="trintaetres">73</button></td>
+				<td id="conferir2"><button id="trintaequatro">74</button></td>
+				<td id="conferir2"><button id="trintaecinto">75</button></td>
+			</tr>
+			<tr>
+				<td id="conferir2"><button id="vinteeseis">76</button></td>
+				<td id="conferir2"><button id="vinteesete">77</button></td>
+				<td id="conferir2"><button id="vinteeoito">78</button></td>
+				<td id="conferir2"><button id="vinteenove">79</button></td>
+				<td id="conferir2"><button id="trinta">80</button></td>
+			</tr>		
+		</table>
+	</div>
+	<script src="resultado.js"></script>
+</body>
+</html>
+
